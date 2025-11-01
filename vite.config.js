@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-export default defineConfig({
-  base: '/nikitenko_fitness/',  // <-- имя репозитория на GitHub
+export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? '/nikitenko_fitness/' : '/',
   plugins: [react()],
   build: {
     outDir: 'dist'
   }
-})
+}))
