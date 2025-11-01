@@ -42,7 +42,7 @@ function Prices() {
 
     return (
         <section className="prices p-80">
-            <div class="prices__header">
+            <div className="prices__header">
                 <p>Training prices</p>
                 <h2 className="title-text">Book Your Trainings</h2>
             </div>

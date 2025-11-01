@@ -14,7 +14,7 @@ function Motivation() {
                 <div className="row row-gap-4 motivation__content">
                     <div className="col-xl-4 col-lg-4 col-md-7 content-item" data-aos="fade-right" data-aos-delay="900">
                         <div className="content-item__image">
-                            <img src="/src/assets/dumbbell.png"/>
+                            <img src="/images/dumbbell.png"/>
                         </div>
                         <div className="content-item__info">
                             <h4>Build power with precision.</h4>
@@ -24,7 +24,7 @@ function Motivation() {
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-7 content-item" data-aos="fade-right" data-aos-delay="1200">
                         <div className="content-item__image">
-                            <img src="/src/assets/dinner.png"/>
+                            <img src="/images/dinner.png"/>
                         </div>
                         <div className="content-item__info">
                             <h4>Cardio that works.</h4>
@@ -34,7 +34,7 @@ function Motivation() {
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-7 content-item" data-aos="fade-right" data-aos-delay="1500">
                         <div className="content-item__image">
-                            <img src="/src/assets/dinner.png"/>
+                            <img src="/images/dinner.png"/>
                         </div>
                         <div className="content-item__info">
                             <h4>Fuel your progress. Recover right.</h4>
