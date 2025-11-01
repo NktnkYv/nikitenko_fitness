@@ -1,0 +1,59 @@
+@use "../vars" as *;
+
+
+.clients {
+  &__header {
+    p {
+      font-size: 14px;
+      margin-bottom: $spacing-default;
+      color: $active-color;
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.swiper {
+  border-radius: $border-radius-main;
+  img {
+    border-radius: $border-radius-main;
+    height: 500px;
+    object-position: top;
+  }
+}
+
+.swiper-button-prev {
+  margin-left: $spacing-default!important;
+}
+
+.swiper-button-next {
+  margin-right: $spacing-default!important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  fill: $active-color;
+  border: 2px solid $active-color;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+
+   &.swiper-button-disabled {
+      opacity: 0.6;
+  }
+
+  .swiper-navigation-icon {
+    height: 16px;
+
+    path {
+      fill: $active-color;
+    }
+  }
+}
+
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    background: $active-color;
+  }
+}

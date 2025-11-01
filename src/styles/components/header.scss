@@ -1,0 +1,39 @@
+@use "../vars" as *;
+
+.header {
+  background: linear-gradient(rgba($main-bg, 0.7), rgba($main-bg, 0.7)),
+  url('src/assets/header.jpg') no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  .container-fluid, .row {
+    height: 100%;
+  }
+
+  &__info, &__map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 32px;
+    color: $active-color;
+  }
+
+  p {
+    font-size: 60px;
+    color: $white-color;
+    margin-bottom: 0;
+    font-family: 'Montserrat Variable', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  button {
+    margin-top: $spacing-default;
+    width: 180px;
+  }
+}

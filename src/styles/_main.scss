@@ -1,0 +1,90 @@
+@use "./vars" as *;
+
+.p-80 {
+  padding: 80px 0;
+}
+
+.title-text {
+  font-size: 42px;
+  color: $white-color;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0 auto $spacing-lg;
+}
+
+button {
+  background-color: $active-color;
+  border: 1px solid $active-color;
+  text-transform: uppercase;
+  color: $main-bg;
+  border-radius: $border-radius-main;
+  outline: none;
+  padding: $spacing-sm;
+  transition: all .15s ease-in;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+
+  &:hover {
+    background-color: $white-color;
+    border: 1px solid $white-color;
+    box-shadow: 0 8px 8px -6.4px $active-color;
+    transform: translateY(-4px);
+  }
+}
+
+.container-fluid {
+  padding: 0 5vw;
+  width: 100%;
+}
+
+.form-control {
+  background-color: $light-black;
+  border: 1px solid $border-color;
+  padding: $spacing-md;
+  color: $white-color;
+  cursor: pointer;
+  &:focus {
+    background-color: $light-black;
+    box-shadow: 0 0 15px $active-color;
+    border: 1px solid rgba($active-color, 0.3);
+    color: $white-color;
+  }
+  &::placeholder {
+    color: $white-color;
+  }
+}
+
+
+.social-links {
+  display: flex;
+  gap: 8px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    border: 1px solid $active-color;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    a {
+      color: $active-color;
+      font-size: 20px;
+    }
+
+    &:hover {
+      background: $active-color;
+      transition: all 0.3s
+      ease-in-out;
+      box-shadow: 0 0 15px $active-color;
+      a {
+        color: $light-black;
+      }
+    }
+
+  }
+}

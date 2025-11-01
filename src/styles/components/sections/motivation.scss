@@ -1,0 +1,64 @@
+@use "../../vars" as *;
+
+.motivation {
+  background: linear-gradient(rgba($main-bg, 0.8), rgba($main-bg, 0.8)),
+  url('src/assets/about.jpg') no-repeat;
+  background-size: cover;
+  padding: 160px 0;
+
+  &__heading {
+    margin-bottom: $spacing-lg;
+    h1 {
+      font-size: 48px;
+      color: $active-color;
+      text-transform: uppercase;
+      margin-bottom: $spacing-sm;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: $spacing-default;
+      color: $white-color;
+    }
+  }
+
+
+
+  &__content {
+    .content-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      &__image {
+        border-radius: 50%;
+        min-width: 80px;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white-color;
+        img {
+          width: 48px;
+          height: 48px;
+
+        }
+      }
+      &__info {
+        h4, p {
+          margin: 0;
+          color: $white-color;
+        }
+
+        h4 {
+          margin-bottom: $spacing-sm;
+          color: $active-color;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

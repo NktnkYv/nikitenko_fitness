@@ -1,0 +1,9 @@
+@use "./styles/vars" as *;
+@use "./styles/main" as *;
+
+html, body {
+    background-color: $main-bg;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}

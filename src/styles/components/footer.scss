@@ -1,0 +1,110 @@
+@use "../vars" as *;
+@use "../main" as *;
+
+
+.footer {
+  padding-bottom: 40px;
+}
+
+.contact-me {
+  background-color: $light-black;
+  border: 1px solid $border-color;
+  padding: $spacing-md;
+  border-radius: 16px;
+
+  .contact-form {
+    h4 {
+      color: $active-color;
+    }
+
+    p {
+      color: $white-color;
+    }
+  }
+
+  button {
+    margin-top: $spacing-lg;
+  }
+}
+
+.contact-info {
+  .heading {
+    h4 {
+      font-size: 32px;
+      color: $active-color;
+      margin-bottom: $spacing-sm;
+    }
+
+    p {
+      font-size: 18px;
+      color: $white-color;
+      margin-bottom: $spacing-lg;
+    }
+  }
+
+  .info {
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: $spacing-md;
+      transition: all .15s ease-in;
+      border: 1px solid transparent;
+      margin-bottom: $spacing-md;
+      border-radius: 16px;
+      cursor: pointer;
+      margin-left: -$spacing-md;
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      i {
+        color: $active-color;
+        font-size: 40px;
+      }
+
+      &:hover {
+        background-color: $light-black;
+        border: 1px solid $border-color;
+      }
+
+      > div {
+        display: flex;
+        flex-direction: column;
+
+        h6 {
+          color: $white-color;
+          font-size: 22px;
+          margin-bottom: $spacing-xs;
+        }
+
+        a {
+          color: #92949f;
+          text-decoration: none;
+          font-size: 18px;
+          &:hover {
+            color: $active-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-contacts {
+  margin-bottom: $spacing-lg;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .social-links {
+    justify-content: flex-end;
+  }
+  p {
+    margin-bottom: 0;
+    color: $white-color;
+    font-size: 18px;
+  }
+}
