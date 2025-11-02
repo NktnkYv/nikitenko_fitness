@@ -46,7 +46,7 @@ function About() {
                         </div>
                     </div>
                     <div className="col-4 about__image" data-aos="fade-left" data-aos-delay="300">
-                        <img src="/images/about-me.jpg"/>
+                        <img src={`${import.meta.env.BASE_URL}images/about-me.jpg`}/>
                     </div>
                 </div>
             </div>
