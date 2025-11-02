@@ -47,7 +47,7 @@ function Footer() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-6 col-lg-6" data-aos="flip-right" data-aos-delay="300">
+                            <div className="col-xl-6 col-lg-6" data-aos="flip-right" data-aos-delay="600">
                                 <div className="contact-me">
                                     <form method="post" className="contact-form" noValidate="novalidate">
                                         <div className="form-wrapper">
