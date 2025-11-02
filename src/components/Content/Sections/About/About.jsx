@@ -26,8 +26,8 @@ function About() {
         <section className="about p-80">
             <h1 className="title-text">About me</h1>
             <div className="container-fluid">
-                <div className="row">
-                    <div className="col-8 about__me" data-aos="fade-right" data-aos-delay="300">
+                <div className="row row-gap-4">
+                    <div className="col-md-8 col-lg-8 about__me" data-aos="fade-right" data-aos-delay="300">
                         <h1> I’m Evgeniy Nikitenko, a certified fitness coach with over 12 years of experience.</h1>
                         <p>I help clients achieve their goals — from fat loss to muscle gain and overall body transformation.
                             I also specialize in athlete preparation for competitions and design custom programs tailored to each individual.</p>
@@ -45,7 +45,7 @@ function About() {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-4 about__image" data-aos="fade-left" data-aos-delay="600">
+                    <div className="col-md-4 col-lg-4 about__image" data-aos="fade-left" data-aos-delay="600">
                         <img src={`${import.meta.env.BASE_URL}images/about-me.jpg`}/>
                     </div>
                 </div>
