@@ -43,7 +43,7 @@ export default function Slider() {
                         >
                             {items.map(item => (
                                 <SwiperSlide>
-                                    <img src={`/images/clients/${item.image}.jpg`} alt="1"/>
+                                    <img src={`${import.meta.env.BASE_URL}images/clients/${item.image}.jpg`} alt="1"/>
                                 </SwiperSlide>
                             ))}
                         </Swiper>

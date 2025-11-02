@@ -23,7 +23,7 @@ function Reviews() {
                             <div className="col-xxl-3 col-xl-6 col-lg-6 col-md-6" data-aos="flip-left"
                                  data-aos-delay={item.delay}>
                                 <div className="review-card">
-                                    <img src={`/images/reviews/${item.name.toLocaleLowerCase()}.jpg`} alt="1"/>
+                                    <img src={`${import.meta.env.BASE_URL}images/reviews/${item.name.toLowerCase()}.jpg`} alt="1"/>
                                     <div className="review-card__info">
                                         <p>{item.message}</p>
                                         <h4>{item.name}</h4>
