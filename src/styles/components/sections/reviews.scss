@@ -24,17 +24,18 @@
 
       img {
         height: 350px;
+        min-height: 350px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
       }
 
       &__info {
         padding: $spacing-md $spacing-default $spacing-default;
+        height: 100%;
 
         p {
           font-size: 16px;
           color: $white-color;
-          height: 168px;
         }
 
         h4 {
